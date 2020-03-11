@@ -1,0 +1,20 @@
+{
+    "[javascriptreact]": {
+        "editor.formatOnSave": true,
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.rulers": [
+            80
+        ]
+    },
+    "[javascript]": {
+        "editor.formatOnSave": true,
+        "editor.detectIndentation": false,
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.rulers": [
+            80
+        ]
+    },
+}
