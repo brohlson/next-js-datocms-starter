@@ -14,7 +14,8 @@
         "prettier/prettier": "warn",
         "react/prop-types": "warn",
         "no-unused-vars": "warn",
-        "react/react-in-jsx-scope": "off"
+        "react/react-in-jsx-scope": "off",
+        "jsx-a11y/anchor-is-valid": "off"
     },
     "extends": [
         "eslint:recommended",

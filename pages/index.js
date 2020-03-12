@@ -13,6 +13,7 @@ const ComingSoon = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: ${colors.white};
@@ -25,7 +26,6 @@ const ComingSoon = styled.div`
 `;
 
 const Home = ({ data }) => {
-  console.log(data);
   return (
     <Layout>
       <Head>
