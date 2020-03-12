@@ -1,2 +1,2 @@
 deploy-prod:
-	now deploy-prod
+	now --prod
