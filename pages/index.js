@@ -13,6 +13,7 @@ const ComingSoon = styled.div`
   height: 100%;
   width: 100%;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background: ${colors.white};
@@ -32,6 +33,7 @@ const Home = ({ data }) => {
         <title>Loaf Boy Fresh</title>
       </Head>
       <ComingSoon>
+        <p>Staging</p>
         <img src="/logo.svg" alt="Logo" />
       </ComingSoon>
     </Layout>
