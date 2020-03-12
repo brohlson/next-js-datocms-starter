@@ -33,7 +33,12 @@ const Home = ({ data }) => {
         <title>Loaf Boy Fresh</title>
       </Head>
       <ComingSoon>
-        <p>Staging</p>
+        <p>
+          Staging{' '}
+          <span aria-label="smile" role="img">
+            🙂
+          </span>
+        </p>
         <img src="/logo.svg" alt="Logo" />
       </ComingSoon>
     </Layout>
