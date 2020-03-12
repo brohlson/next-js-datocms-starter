@@ -26,19 +26,12 @@ const ComingSoon = styled.div`
 `;
 
 const Home = ({ data }) => {
-  console.log(data);
   return (
     <Layout>
       <Head>
         <title>Loaf Boy Fresh</title>
       </Head>
       <ComingSoon>
-        <p>
-          Staging{' '}
-          <span aria-label="smile" role="img">
-            🙂
-          </span>
-        </p>
         <img src="/logo.svg" alt="Logo" />
       </ComingSoon>
     </Layout>
