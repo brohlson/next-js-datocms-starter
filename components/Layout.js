@@ -1,8 +1,9 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import { GlobalStyle, RebootStyle } from '../style';
-import { colors } from '../consts/style';
+import { colors } from '../consts/styles';
 import Favicon from './Favicon';
 
 const Wrapper = styled.div`
@@ -19,3 +20,7 @@ export default function Layout({ children }) {
     </Fragment>
   );
 }
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};

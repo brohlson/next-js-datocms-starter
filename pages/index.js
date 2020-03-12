@@ -1,8 +1,10 @@
 import Head from 'next/head';
 import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 import Layout from '../components/Layout';
-import { colors } from '../consts/style';
+import { colors } from '../consts/styles';
+import DatoCmsClient from '../lib/dato';
 
 const ComingSoon = styled.div`
   position: absolute;
@@ -22,15 +24,29 @@ const ComingSoon = styled.div`
   }
 `;
 
-const Home = () => (
-  <Layout>
-    <Head>
-      <title>Loaf Boy Fresh</title>
-    </Head>
-    <ComingSoon>
-      <img src="/logo.svg" alt="Logo" />
-    </ComingSoon>
-  </Layout>
-);
+const Home = ({ data }) => {
+  console.log(data);
+  return (
+    <Layout>
+      <Head>
+        <title>Loaf Boy Fresh</title>
+      </Head>
+      <ComingSoon>
+        <img src="/logo.svg" alt="Logo" />
+      </ComingSoon>
+    </Layout>
+  );
+};
+
+Home.getInitialProps = async () => {
+  const res = await DatoCmsClient.allRecipes();
+  return { data: res };
+};
+
+Home.propTypes = {
+  data: PropTypes.shape({
+    recipes: PropTypes.array.isRequired,
+  }).isRequired,
+};
 
 export default Home;
