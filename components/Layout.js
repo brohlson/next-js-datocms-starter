@@ -3,11 +3,17 @@ import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
 import { GlobalStyle, RebootStyle } from '../style';
-import { colors } from '../consts/styles';
 import Favicon from './Favicon';
 
 const Wrapper = styled.div`
-  background: ${colors.white};
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 export default function Layout({ children }) {

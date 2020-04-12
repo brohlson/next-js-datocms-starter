@@ -1,7 +1,0 @@
-{
-    "build": {
-        "env": {
-            "DATO_API_KEY": "@loafboyfresh-dato-api-key"
-        }
-    }
-}
